@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel = "icon" type = "image" href = "LOGO.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+
+  <div class="blob b1"></div>
+<div class="blob b2"></div>
+<div class="blob b3"></div>
+
+<div class="wrap">
+    <header>
+        <h1><span>Tic</span><span>Tac Toe</span></h1>
+        <p class="tagline">Two players · One grid · Endless rivalry</p>
+
+        <div class="status" id="status">
+            <span class="dot"></span>
+            <span class="txt">Turn: <span class="who" id="who">Player O</span></span>
+        </div>
+
+        <div class="scores">
+            <div class="score o"><div class="lbl">Player O</div><div class="val" id="scoreO">0</div></div>
+            <div class="score d"><div class="lbl">Draws</div><div class="val" id="scoreD">0</div></div>
+            <div class="score x"><div class="lbl">Player X</div><div class="val" id="scoreX">0</div></div>
+        </div>
+
+        <div class="controls">
+            <button class="btn" id="reset-btn">↻ Reset Round</button>
+            <button class="btn ghost" id="clear-scores">Clear Scores</button>
+        </div>
+    </header>
+
+    <div class="board-shell">
+        <div class="game">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+        </div>
+    </div>
+</div>
+
+<div class="overlay" id="overlay">
+    <div class="card">
+        <div class="trophy" id="trophy">🏆</div>
+        <p id="msg">Winner</p>
+        <button class="btn" id="newbtn">Play Again</button>
+    </div>
+</div>
+
+
+    <script src = "script.js"></script>
+</body>
+</html>
